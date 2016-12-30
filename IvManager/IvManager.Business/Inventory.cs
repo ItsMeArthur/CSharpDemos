@@ -75,7 +75,7 @@ namespace IvManager.Business
 
         public static decimal GetInventoryValue()
         {
-            return Inventory.Products.Select(x => x.Price).Sum();
+            return Inventory.Products.Select(x => (x.Price * x.Quantity)).Sum();
         }
         public static void ClearInventory()
         {

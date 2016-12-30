@@ -13,14 +13,11 @@ namespace IvManager.ConsoleApp
     {
         static void Main(string[] args)
         {
-            //The main loop
             bool runAgain = true;
             while (runAgain)
             {
                 PrintMenu();
                 int input = int.Parse(Console.ReadLine());
-
-
 
                 switch (input)
                 {
